@@ -429,8 +429,8 @@ body.sidebar-open .sidebar-overlay {
 }
 
 .carousel-item {
-  width: 180px;
-  height: 240px;
+  width: 270px;
+  height: 180px;
   flex: 0 0 auto;
   border-radius: 20px;
   overflow: hidden;
@@ -1547,8 +1547,8 @@ body.sidebar-open .sidebar-overlay {
   }
 
   .carousel-item {
-    width: 150px;
-    height: 205px;
+    width: 210px;
+    height: 140px;
   }
 
   .about-container,
@@ -1842,8 +1842,8 @@ body.sidebar-open .sidebar-overlay {
   }
 
   .carousel-item {
-    width: 120px;
-    height: 165px;
+    width: 160px;
+    height: 107px;
     border-radius: 14px;
   }
 
