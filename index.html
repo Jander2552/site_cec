@@ -4,667 +4,294 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Colégio Eucarístico de Cuiabá</title>
-  <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link rel="icon" href="./assets/logo_colegio.svg" type="image/svg+xml">
-
   <meta name="description"
-    content="Colégio Eucarístico de Cuiabá: formação integral do 6º ano do Ensino Fundamental ao 3º ano do Ensino Médio.">
+    content="Colégio Eucarístico de Cuiabá: educação para a vida e formação integral do 5º ano do Ensino Fundamental ao 3º ano do Ensino Médio.">
+  <meta name="theme-color" content="#071d37">
+  <title>Colégio Eucarístico de Cuiabá</title>
+  <link rel="icon" href="./assets/logo_colegio.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
   <header class="site-header">
     <div class="header-container">
-      <a href="#" class="logo" aria-label="Colégio Eucarístico de Cuiabá">
-        <img src="./assets/logo_colegio.svg" alt="Colégio Eucarístico de Cuiabá">
-        <span>
-          Colégio<br>
-          Eucarístico<br>
-          de Cuiabá
+      <a class="brand" href="#inicio" aria-label="Colégio Eucarístico de Cuiabá — início">
+        <img src="./assets/logo_colegio.svg" alt="">
+        <span class="brand-copy">
+          <span class="brand-name">Colégio Eucarístico<br>de Cuiabá</span>
+          <span class="brand-motto">Conhecer, Amar e Servir</span>
         </span>
       </a>
 
-      <nav class="nav-menu" aria-label="Menu principal">
+      <nav class="main-nav" aria-label="Menu principal">
         <a href="#excelencia">Excelência</a>
         <a href="#formacao">Formação</a>
         <a href="#juventude">Juventude</a>
         <a href="#bases">Bases</a>
-        <a href="#duvidas">Dúvidas</a>
+        <a href="#matricula">Dúvidas</a>
         <a href="#contato">Contato</a>
       </nav>
 
-      <a href="https://api.whatsapp.com/send/?phone=5565999364922&text&type=phone_number&app_absent=0" target="_blank"
-        class="header-button">
-        Faça sua matrícula
+      <a class="header-cta" href="https://wa.me/5565999364922" target="_blank" rel="noopener noreferrer">
+        Matrículas 2027 <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
       </a>
 
-      <button class="mobile-menu-button" type="button" aria-label="Abrir menu" aria-controls="mobileSidebar"
+      <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-controls="mobileMenu"
         aria-expanded="false">
-        <i class="fa-solid fa-bars"></i>
+        <i class="fa-solid fa-bars" aria-hidden="true"></i>
       </button>
     </div>
   </header>
 
-  <div class="sidebar-overlay" data-close-sidebar></div>
-
-  <aside class="mobile-sidebar" id="mobileSidebar" aria-hidden="true">
-    <div class="mobile-sidebar-header">
-      <a href="#" class="sidebar-logo">
-        <img src="./assets/logo_colegio.svg" alt="Colégio Eucarístico de Cuiabá">
-        <span>
-          Colégio<br>
-          Eucarístico<br>
-          de Cuiabá
+  <div class="menu-backdrop" data-close-menu></div>
+  <aside class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <div class="mobile-menu-top">
+      <a class="brand" href="#inicio" aria-label="Colégio Eucarístico de Cuiabá — início">
+        <img src="./assets/logo_colegio.svg" alt="">
+        <span class="brand-copy">
+          <span class="brand-name">Colégio Eucarístico<br>de Cuiabá</span>
+          <span class="brand-motto">Conhecer, Amar e Servir</span>
         </span>
       </a>
-
-      <button class="sidebar-close" type="button" aria-label="Fechar menu">
-        <i class="fa-solid fa-xmark"></i>
+      <button class="menu-close" type="button" aria-label="Fechar menu">
+        <i class="fa-solid fa-xmark" aria-hidden="true"></i>
       </button>
     </div>
-
-    <nav class="sidebar-nav" aria-label="Menu mobile">
+    <nav aria-label="Menu mobile">
       <a href="#excelencia">Excelência</a>
       <a href="#formacao">Formação</a>
       <a href="#juventude">Juventude</a>
       <a href="#bases">Bases</a>
-      <a href="#duvidas">Dúvidas</a>
+      <a href="#matricula">Dúvidas</a>
       <a href="#contato">Contato</a>
     </nav>
-
-    <a href="https://api.whatsapp.com/send/?phone=5565999364922&text&type=phone_number&app_absent=0" target="_blank"
-      class="sidebar-button">
-      Faça sua matrícula
+    <a class="mobile-menu-cta" href="https://wa.me/5565999364922" target="_blank" rel="noopener noreferrer">
+      Matrículas 2027 <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
     </a>
   </aside>
 
   <main>
-    <section class="hero">
-      <div class="hero-overlay"></div>
-
+    <section class="hero" id="inicio">
+      <img class="hero-image" src="./assets/IMG_0942.jpg" alt="Alunos do Colégio reunidos em oração">
+      <div class="hero-shade"></div>
       <div class="hero-content">
-        <span class="hero-subtitle">Conhecer, amar e servir</span>
-
-        <h1>
-          Colégio Eucarístico<br>
-          de Cuiabá
-        </h1>
-
-        <p>
-          <span>Do 6º ano</span> do Ensino Fundamental <span>ao 3º ano</span> do Ensino Médio
-        </p>
-
+        <p class="eyebrow hero-eyebrow">Conhecer, amar e servir</p>
+        <h1>Educar para a vida.<br><em>Formar para o Céu.</em></h1>
+        <p class="hero-description">Do 5º ano do Ensino Fundamental<br class="mobile-break"> ao 3º ano do Ensino Médio.</p>
         <div class="hero-actions">
-          <a href="https://api.whatsapp.com/send/?phone=5565999364922&text&type=phone_number&app_absent=0"
-            target="_blank" class="btn btn-primary">
-            Faça sua matrícula
-          </a>
-
-          <a href="https://api.whatsapp.com/send/?phone=5565999364922&text&type=phone_number&app_absent=0"
-            target="_blank" class="btn btn-outline">
-            Trabalhe conosco
-          </a>
+          <a class="button button-gold" href="#excelencia">Conheça o Colégio <i class="fa-solid fa-arrow-right"
+              aria-hidden="true"></i></a>
+          <a class="button button-outline" href="https://wa.me/5565999364922" target="_blank"
+            rel="noopener noreferrer">Matrículas 2027 <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
         </div>
+      </div>
+      <span class="hero-signature" aria-hidden="true">Conhecer,<br>Amar e Servir</span>
+    </section>
+
+    <section class="benefits" id="excelencia" aria-label="Diferenciais do Colégio">
+      <article class="benefit">
+        <span class="benefit-icon"><i class="fa-solid fa-cross" aria-hidden="true"></i></span>
+        <div><h2>Formação Católica</h2><p>Cristo no centro de tudo.</p></div>
+      </article>
+      <article class="benefit">
+        <span class="benefit-icon"><i class="fa-solid fa-book-open" aria-hidden="true"></i></span>
+        <div><h2>Excelência Acadêmica</h2><p>Conhecimento que transforma.</p></div>
+      </article>
+      <article class="benefit">
+        <span class="benefit-icon"><i class="fa-solid fa-people-group" aria-hidden="true"></i></span>
+        <div><h2>Ensino Fundamental e Médio</h2><p>Do 5º ano ao 3º ano do Ensino Médio.</p></div>
+      </article>
+      <article class="benefit">
+        <span class="benefit-icon"><i class="fa-solid fa-location-dot" aria-hidden="true"></i></span>
+        <div><h2>Cuiabá-MT</h2><p>Uma escola a serviço da família.</p></div>
+      </article>
+    </section>
+
+    <section class="patrons-section" id="formacao">
+      <div class="section-heading section-heading-light">
+        <p class="eyebrow">Uma escola, uma grande família</p>
+        <h2>Patronos das Turmas</h2>
+        <p>Cada turma do Colégio Eucarístico de Cuiabá possui um casal de santos padroeiros,<br class="desktop-break">
+          que inspira e acompanha os alunos em sua jornada de formação.</p>
+      </div>
+
+      <div class="patron-grid">
+        <article class="patron-card"><img src="./assets/patronos-5-ano.jpeg"
+            alt="Cartão dos patronos do 5º ano: Beata Imelda e São Tarcísio"></article>
+        <article class="patron-card"><img src="./assets/patronos-6-ano.jpeg"
+            alt="Cartão dos patronos do 6º ano: Santa Jacinta Marto e São Francisco Marto"></article>
+        <article class="patron-card"><img src="./assets/patronos-7-ano.jpeg"
+            alt="Cartão dos patronos do 7º ano: Santa Laura Vicuña e São Domingos Sávio"></article>
+        <article class="patron-card"><img src="./assets/patronos-8-ano.jpeg"
+            alt="Cartão dos patronos do 8º ano: Chiara Luce Badano e Beato Carlo Acutis"></article>
+        <article class="patron-card"><img src="./assets/patronos-9-ano.jpeg"
+            alt="Cartão dos patronos do 9º ano: Santa Teresinha do Menino Jesus e São João Paulo II"></article>
+        <article class="patron-card"><img src="./assets/patronos-1-ano-em.jpeg"
+            alt="Cartão dos patronos do 1º ano do Ensino Médio: Santa Clara de Assis e São Francisco de Assis"></article>
+        <article class="patron-card"><img src="./assets/patronos-2-ano-em.jpeg"
+            alt="Cartão dos patronos do 2º ano do Ensino Médio: Santa Teresa d'Ávila e São João da Cruz"></article>
+        <article class="patron-card"><img src="./assets/patronos-3-ano-em.jpeg"
+            alt="Cartão dos patronos do 3º ano do Ensino Médio: Santa Catarina de Sena e São Tomás de Aquino"></article>
       </div>
     </section>
 
-    <section class="cec-about">
-      <div class="carousel-strip">
-        <div class="carousel-track" id="carouselTrack">
-          <a href="https://api.whatsapp.com/send/?phone=5565999364922&text&type=phone_number&app_absent=0"
-            target="_blank" class="carousel-item">
-            <img src="./assets/acampamento.png" alt="Acampamento CEC">
-          </a>
-          <a href="https://api.whatsapp.com/send/?phone=5565999364922&text&type=phone_number&app_absent=0"
-            target="_blank" class="carousel-item">
-            <img src="./assets/acampamento.png" alt="Acampamento CEC">
-          </a>
-          <a href="https://api.whatsapp.com/send/?phone=5565999364922&text&type=phone_number&app_absent=0"
-            target="_blank" class="carousel-item">
-            <img src="./assets/acampamento.png" alt="Acampamento CEC">
-          </a>
-          <a href="https://api.whatsapp.com/send/?phone=5565999364922&text&type=phone_number&app_absent=0"
-            target="_blank" class="carousel-item">
-            <img src="./assets/acampamento.png" alt="Acampamento CEC">
-          </a>
-          <a href="https://api.whatsapp.com/send/?phone=5565999364922&text&type=phone_number&app_absent=0"
-            target="_blank" class="carousel-item">
-            <img src="./assets/acampamento.png" alt="Acampamento CEC">
-          </a>
-          <a href="https://api.whatsapp.com/send/?phone=5565999364922&text&type=phone_number&app_absent=0"
-            target="_blank" class="carousel-item">
-            <img src="./assets/acampamento.png" alt="Acampamento CEC">
-          </a>
-          <a href="https://api.whatsapp.com/send/?phone=5565999364922&text&type=phone_number&app_absent=0"
-            target="_blank" class="carousel-item">
-            <img src="./assets/acampamento.png" alt="Acampamento CEC">
-          </a>
-          <a href="https://api.whatsapp.com/send/?phone=5565999364922&text&type=phone_number&app_absent=0"
-            target="_blank" class="carousel-item">
-            <img src="./assets/acampamento.png" alt="Acampamento CEC">
-          </a>
-        </div>
+    <section class="proposal-section">
+      <div class="proposal-copy">
+        <p class="eyebrow">Formação integral</p>
+        <h2>Nossa proposta</h2>
+        <p>Uma educação que une fé, conhecimento e virtude para formar jovens que sejam luz no mundo.</p>
+        <p class="proposal-detail">Educação para desenvolver o potencial humano, intelectual e espiritual de cada aluno,
+          à luz do Evangelho.</p>
+        <a class="button button-gold" href="#bases">Conheça nossa proposta <i class="fa-solid fa-arrow-right"
+            aria-hidden="true"></i></a>
       </div>
-
-      <div class="about-container" id="excelencia">
-        <div class="about-intro">
-          <div class="quote-box">
-            <span>Conhecer, amar e servir</span>
-
-            <h2>
-              “A educação é a arte suprema cujo material não é nem a madeira nem a
-              pedra, mas a alma humana. É a vida interior que é o fundamento último;
-              a formação se faz do interior para o exterior”
-            </h2>
-
-            <p>Santa Edith Stein</p>
-          </div>
-
-          <div class="about-image">
-            <img src="assets/edith_stein.png" alt="Santa Edith Stein escrevendo">
-          </div>
-
-          <div class="about-text">
-            <p>
-              Para composição do currículo escolar há disciplinas e conteúdos já
-              confirmados e determinados. Entretanto, mais do que uma apropriação de
-              saberes trata-se de uma formação integral que exige, em primeiro lugar,
-              a compreensão devida do conceito de pessoa e o seu fim último.
-            </p>
-
-            <p>
-              <strong>
-                Não somos um mero emaranhado de células,
-              </strong>
-              tampouco uma máquina para resultados, somos corpo, alma e espírito,
-              <strong>
-                somos amados com amor eterno e temos uma missão a realizar nesta
-                terra onde estamos em peregrinação à Pátria Celeste.
-              </strong>
-            </p>
-          </div>
+      <div class="proposal-visual">
+        <div class="proposal-photos">
+          <img src="./assets/IMG_0735.jpg" alt="Alunos estudando juntos">
+          <img src="./assets/mosaico-3.jpg" alt="Alunas do Colégio em atividade">
+          <img src="./assets/IMG_0713.jpg" alt="Alunos em atividade esportiva">
         </div>
-
-        <div class="about-divider"></div>
-
-        <div class="values-grid">
-          <article class="value-card">
-            <div class="value-icon">
-              <img src="./assets/icon-01.svg" alt="Conhecer">
-            </div>
-
-            <h3>Conhecer</h3>
-
-            <p>
-              A Verdade, por meio do estudo aplicado das ciências à luz da fé e
-              conforme à Sã Doutrina da Salvação.
-            </p>
+        <div class="proposal-values">
+          <article>
+            <span class="mini-icon"><i class="fa-solid fa-trophy" aria-hidden="true"></i></span>
+            <div><h3>Vida espiritual</h3><p>Sacramentos, oração e vida litúrgica como alicerces da nossa educação.</p></div>
           </article>
-
-          <article class="value-card">
-            <div class="value-icon">
-              <img src="./assets/icon-02.svg" alt="Amar">
-            </div>
-
-            <h3>Amar</h3>
-
-            <p>
-              A Cristo e aos irmãos, por meio do exercício diário da caridade cristã
-              e demais virtudes.
-            </p>
+          <article>
+            <span class="mini-icon"><i class="fa-solid fa-book-open" aria-hidden="true"></i></span>
+            <div><h3>Excelência acadêmica</h3><p>Ensino sólido, professores dedicados e altos resultados.</p></div>
           </article>
-
-          <article class="value-card">
-            <div class="value-icon">
-              <img src="./assets/icon-03.svg" alt="Servir">
-            </div>
-
-            <h3>Servir</h3>
-
-            <p>
-              A Deus e a toda a humanidade, por meio dos conhecimentos adquiridos e
-              virtudes desenvolvidas.
-            </p>
+          <article>
+            <span class="mini-icon"><i class="fa-solid fa-people-group" aria-hidden="true"></i></span>
+            <div><h3>Formação humana</h3><p>Virtudes, caráter e serviço para nossos alunos serem protagonistas.</p></div>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="education-section" id="formacao">
-      <div class="education-container">
-        <span class="section-badge">Educação Eucarística</span>
+    <section class="differentials" id="bases">
+      <div class="differentials-title">
+        <p class="eyebrow">Por que escolher o CEC?</p>
+        <h2>Diferenciais</h2>
+      </div>
+      <article><span><i class="fa-solid fa-house" aria-hidden="true"></i></span><p>Ambiente seguro<br>e familiar</p></article>
+      <article><span><i class="fa-solid fa-chart-simple" aria-hidden="true"></i></span><p>Método pedagógico<br>comprovado</p></article>
+      <article><span><i class="fa-solid fa-user" aria-hidden="true"></i></span><p>Acompanhamento<br>individual do aluno</p></article>
+      <article><span><i class="fa-solid fa-people-group" aria-hidden="true"></i></span><p>Tradição católica<br>e comunidade viva</p></article>
+    </section>
 
-        <h2>
-          Disciplina, heroísmo<br>
-          e configuração.
-        </h2>
-
-        <p class="education-subtitle">
-          Para se manter tão próximo de nós, Jesus se fez<br>
-          Eucaristia, para nos aproximarmos dos jovens Deus nos<br>
-          deu o Colégio Eucarístico de Cuiabá.
-        </p>
-
-        <div class="education-gallery" id="educationGallery">
-          <div class="gallery-card gallery-disciplina active">
-            <img src="./assets/disciplina.jpeg" alt="Disciplina">
-
-            <div class="gallery-overlay"></div>
-
-            <div class="gallery-content">
-              <h3>DISCIPLINA</h3>
-
-              <p>
-                Observância das regras.<br>
-                Cumprimento dos combinados.<br>
-                Compromisso com os estudos.<br>
-                Respeito às autoridades.
-              </p>
-            </div>
-          </div>
-
-          <div class="gallery-card gallery-heroismo">
-            <img src="./assets/heroismo.jpg" alt="Heroísmo">
-
-            <div class="gallery-overlay"></div>
-
-            <div class="gallery-content">
-              <h3>HEROÍSMO</h3>
-
-              <p>
-                Fazer além do que é solicitado.<br>
-                Sair de si para ajudar o outro.<br>
-                Estar sempre a serviço.<br>
-                Suportar as provações com alegria.
-              </p>
-            </div>
-          </div>
-
-          <div class="gallery-card gallery-configuracao">
-            <img src="./assets/configuracao.jpeg" alt="Configuração">
-
-            <div class="gallery-overlay"></div>
-
-            <div class="gallery-content">
-              <h3>CONFIGURAÇÃO</h3>
-
-              <p>
-                Expressar as feições de Cristo.<br>
-                Viver em constante comunhão.<br>
-                Ser exemplo em tudo, com amor e humildade.
-              </p>
-            </div>
-          </div>
-
-          <div class="gallery-card gallery-proposta">
-            <img src="./assets/proposta.png" alt="Proposta Pedagógica">
-
-            <div class="gallery-overlay"></div>
-
-            <div class="gallery-content">
-              <h3>
-                PROPOSTA<br>
-                PEDAGÓGICA
-              </h3>
-
-              <p>
-                “Não só passar no vestibular,<br>
-                mas sobretudo pela porta estreita.”
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="education-text">
-          <p>
-            Que cada matrícula não seja apenas a entrada em uma escola, mas em uma
-            família composta de muitas outras famílias,
-            <strong>para glória de Deus e salvação das almas.</strong>
-          </p>
-
-          <p>
-            <strong>Este sonho já está em andamento! as portas estão abertas desde 2025!</strong>
-            Reze conosco. Garanta sua vaga! Seja um benfeitor! Deus te abençoe
-            grandemente! Juntos pelo Céu!
-          </p>
-        </div>
-
-        <div class="education-actions">
-          <a href="#matricula" class="education-btn education-btn-outline">
-            Faça sua matrícula
-          </a>
-        </div>
+    <section class="school-life" id="juventude">
+      <div class="school-life-heading">
+        <p class="eyebrow">Mais que uma escola</p>
+        <h2>Vida escolar</h2>
+        <p>Aprendizagem, amizade, fé e serviço<br>em uma experiência transformadora.</p>
+        <a class="button button-gold" href="#matricula">Conheça mais do dia a dia <i class="fa-solid fa-arrow-right"
+            aria-hidden="true"></i></a>
+      </div>
+      <div class="life-gallery">
+        <article><img src="./assets/IMG_0735.jpg" alt="Alunos estudando juntos"><span><i class="fa-solid fa-book-open"
+              aria-hidden="true"></i> Estudos</span></article>
+        <article><img src="./assets/mosaico-3.jpg" alt="Alunas do Colégio reunidas"><span><i
+              class="fa-solid fa-people-group" aria-hidden="true"></i> Amizade</span></article>
+        <article><img src="./assets/IMG_0935.jpg" alt="Alunos em momento de oração"><span><i class="fa-solid fa-cross"
+              aria-hidden="true"></i> Vida litúrgica</span></article>
+        <article><img src="./assets/IMG_0898.jpg" alt="Alunos em atividade esportiva"><span><i class="fa-solid fa-trophy"
+              aria-hidden="true"></i> Esportes</span></article>
+        <article><img src="./assets/mosaico-6.jpg" alt="Alunos colaborando em atividade escolar"><span><i
+              class="fa-regular fa-heart" aria-hidden="true"></i> Solidariedade</span></article>
       </div>
     </section>
 
-    <section class="youth-section" id="juventude">
-      <div class="youth-container">
-        <div class="youth-left">
-          <span class="youth-label">Juventude</span>
-
-          <h2>
-            Não somente passar pelo<br>
-            vestibular, <em>mas passar pela<br>
-              porta estreita!</em>
-          </h2>
-
-          <div class="youth-carousel" id="youthCarousel">
-            <div class="youth-track" id="youthTrack">
-              <div class="youth-card">
-                <img src="./assets/aluno-aprovado1.jpeg" alt="Aprovada no vestibular">
-              </div>
-
-              <div class="youth-card">
-                <img src="./assets/aluno_aprovado2.png" alt="Aprovado no vestibular">
-              </div>
-
-              <div class="youth-card">
-                <img src="./assets/aluno-aprovado3.jpeg" alt="Aprovado no vestibular">
-              </div>
-
-              <div class="youth-card">
-                <img src="./assets/aluno_aprovado4.png" alt="Aprovado no vestibular">
-              </div>
-
-              <div class="youth-card">
-                <img src="./assets/aluno-aprovado5.jpeg" alt="Aprovado no vestibular">
-              </div>
-
-              <div class="youth-card">
-                <img src="./assets/aluno_aprovado6.png" alt="Aprovado no vestibular">
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="youth-right">
-          <article class="youth-text-block">
-            <span>Educação Eucarística</span>
-
-            <h3>
-              “Que os nossos jovens dominem os conteúdos mais necessários, mas que
-              saibam fazer o bem com esses saberes, que honrem a Deus e ao próximo.
-              Que eles alcancem as melhores aprovações possíveis, mas que não
-              entendam isso como o sentido de suas vidas, pois a vida é muito mais!”.
-            </h3>
-
-            <p>
-              O que eu vou ser quando eu crescer? Se a infância é o tempo desta
-              pergunta, a juventude é a fase da resposta. E muitos jovens não
-              conseguem responder bem, pois lhes falta uma outra compreensão: o que
-              eu sou? Antes de enxergar-se numa profissão, o jovem precisa
-              desenvolver a sua personalidade, encontrar o sentido da sua existência,
-              sua vocação e o valor de sua vida.
-            </p>
-          </article>
-
-          <article class="youth-text-block">
-            <span>Educação Eucarística</span>
-
-            <h3>
-              Muitos jovens são assolados pela ansiedade.
-            </h3>
-
-            <p>
-              Muitos jovens são assolados pela ansiedade, outros acabam se cortando
-              para aliviar uma tensão interior, há os que se entregam a muitos vícios
-              e alguns chegam a desistir de viver. Dom Bosco já bem explicou que
-              além dos jovens serem amados eles precisam saber que são amados, tal
-              tarefa requer um verdadeiro compromisso com eles, muito mais do que
-              prepará-los para enfrentar um vestibular, ajudá-los a enfrentar e
-              vencer o mundo, seus dramas, seus medos, o que só pode acontecer na
-              proximidade.
-            </p>
-          </article>
-        </div>
+    <section class="enrollment" id="matricula">
+      <img src="./assets/mosaico-8.jpg" alt="" class="enrollment-image">
+      <div class="enrollment-shade"></div>
+      <div class="enrollment-copy">
+        <p class="eyebrow">Matrículas 2027 abertas</p>
+        <h2>Seu filho em um grande caminho.</h2>
+        <p>Mais que uma escola, um caminho de formação para a vida inteira.<br>Venha fazer parte desta história.</p>
+        <a class="button button-gold" href="https://wa.me/5565999364922" target="_blank" rel="noopener noreferrer">
+          Garantir uma vaga <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+        </a>
       </div>
-    </section>
-
-    <section class="focus-dream-section" id="bases">
-      <div class="focus-dream-container">
-        <div class="focus-dream-row row-top">
-          <div class="focus-image image-large">
-            <img src="./assets/banner1.jpg" alt="Alunos em momento de oração">
-          </div>
-
-          <article class="focus-card">
-            <h2>FOCO</h2>
-
-            <p>
-              "Preparar o jovem para dominar os saberes necessários sem que se deixe
-              dominar pelo mundo, alcançar os melhores resultados nos testes sem
-              perder a fé durante as provações, vencer na vida sem perder a alma."
-            </p>
-          </article>
-        </div>
-
-        <div class="focus-dream-row row-bottom">
-          <article class="focus-card dream-card">
-            <h2>SONHO</h2>
-
-            <p>
-              "Formar uma grande família para ajudar muitas famílias na condução dos
-              filhos pelo caminho do Bem."
-            </p>
-          </article>
-
-          <div class="focus-image image-wide">
-            <img src="./assets/banner2.jpg" alt="Alunos com certificados">
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="contact-mosaic-section" id="matricula">
-      <div class="contact-mosaic-container">
-
-        <div class="mosaic-img mosaic-1">
-          <img src="./assets/mosaico-1.jpg" alt="Capela do Colégio">
-        </div>
-
-        <div class="mosaic-img mosaic-2">
-          <img src="./assets/mosaico-3.jpg" alt="Alunas do Colégio">
-        </div>
-
-        <div class="mosaic-img mosaic-3">
-          <img src="./assets/mosaico-2.jpg" alt="Aluna em atividade">
-        </div>
-
-        <div class="mosaic-img mosaic-4">
-          <img src="./assets/mosaico-4.jpg" alt="Colégio Eucarístico">
-        </div>
-
-        <div class="mosaic-img mosaic-5">
-          <img src="./assets/mosaico-5.jpg" alt="Aluno tocando flauta">
-        </div>
-
-        <div class="mosaic-img mosaic-6">
-          <img src="./assets/mosaico-6.jpg" alt="Nossa Senhora">
-        </div>
-
-        <div class="mosaic-img mosaic-7">
-          <img src="./assets/mosaico-7.jpg" alt="Turma do Colégio">
-        </div>
-
-        <div class="mosaic-img mosaic-8">
-          <img src="./assets/mosaico-8.jpg" alt="Alunos estudando">
-        </div>
-
-        <div class="mosaic-img mosaic-9">
-          <img src="./assets/mosaico-9.jpg" alt="Alunas do Colégio">
-        </div>
-
-        <div class="mosaic-img mosaic-10">
-          <img src="./assets/mosaico-10.jpg" alt="Evento do Colégio">
-        </div>
-
-        <div class="mosaic-img mosaic-11">
-          <img src="./assets/mosaico-11.jpg" alt="Evento do Colégio">
-        </div>
-
-        <div class="contact-mosaic-content">
-          <span>Matrícula</span>
-
-          <h2>
-            Entre em contato e tire<br>
-            suas dúvidas
-          </h2>
-
-          <p>
-            Clique no botão e entre em contato agora mesmo!
-          </p>
-
-          <a href="https://api.whatsapp.com/send/?phone=5565999364922&text&type=phone_number&app_absent=0"
-            target="_blank" class="contact-mosaic-btn">
-            Faça sua matrícula
-          </a>
-        </div>
-
-      </div>
-    </section>
-
-    <section class="faq-section" id="duvidas">
-      <div class="faq-container">
-        <span class="faq-badge">PERGUNTAS FREQUENTES</span>
-
-        <h2>
-          Dúvidas que merecem<br>
-          respostas claras
-        </h2>
-
-        <div class="faq-list">
-          <div class="faq-item active">
-            <button class="faq-question" type="button">
-              <span>Proposta pedagógica</span>
-              <i class="fa-solid fa-minus"></i>
-            </button>
-
-            <div class="faq-answer">
-              <p>
-                "Não só passar no vestibular, mas sobretudo pela porta estreita." 1. Método Preventivo de São João Bosco
-                - Espiritualidade, Amabilidade e Razão. 2. Pedagogia de Edith Stein - Santa Teresa Benedita da Cruz à
-                luz de Santo Tomás de Aquino. 3. Educação Eucarística - disciplina, heroísmo e configuração.
-              </p>
-            </div>
-          </div>
-
-          <div class="faq-item">
-            <button class="faq-question" type="button">
-              <span>Turmas</span>
-              <i class="fa-solid fa-plus"></i>
-            </button>
-
-            <div class="faq-answer">
-              <p>
-                Do 6º ano do Ensino Fundamental ao 3º Ano do Ensino Médio.
-              </p>
-            </div>
-          </div>
-
-          <div class="faq-item">
-            <button class="faq-question" type="button">
-              <span>Excelência em ciência</span>
-              <i class="fa-solid fa-plus"></i>
-            </button>
-
-            <div class="faq-answer">
-              <p>
-                "Amor pelo estudo e compromisso com a Verdade." • Ensino sistemático das diferentes ciências conforme o
-                currículo oficial. • Professores especializados e capacitados em conteúdo e didática, para cada
-                disciplina. • Livros didáticos e literários de excelência para cada disciplina. • Incentivo à pesquisa
-                acadêmica e à produção de ciência.
-              </p>
-            </div>
-          </div>
-
-          <div class="faq-item">
-            <button class="faq-question" type="button">
-              <span>Excelência em fé</span>
-              <i class="fa-solid fa-plus"></i>
-            </button>
-
-            <div class="faq-answer">
-              <p>
-                Conquistar um lugar no mundo sem perder o lugar no Céu. • Ensino alicerçado na Sã Doutrina da Salvação.
-                • Concepção metafísica (visão de mundo), antropológica (o ser humano e sua existência), ética (como
-                viver) e soteriológica (por que viver) à luz da fé. • Professores e profissionais com vida religiosa e
-                sacramental. • Acompanhamento espiritual e vocacional de cada aluno e profissional. • Formação
-                catequética permanente. • Amplo ambiente religioso.
-              </p>
-            </div>
-          </div>
-
-          <div class="faq-item">
-            <button class="faq-question" type="button">
-              <span>Bases norteadoras</span>
-              <i class="fa-solid fa-plus"></i>
-            </button>
-
-            <div class="faq-answer">
-              <p>
-                1. Ensino de alto nível Não será utilizado um sistema apostilado fechado. os professores apresentarão os
-                conteúdos e obras de maior excelência por meio da abordagem didática mais eficaz, não somente para que
-                os alunos alcancem aprovações em vestibulares, mas para que desenvolvam o amor pelo conhecimento e
-                cheguem à sabedoria. 2. Profunda formação cristã Ensino conforme à Sã Doutrina da salvação. ampla
-                vivência religiosa. ambientes voltados para uma permanente experiência com Deus. Combate às ideologias,
-                vícios e culturas anticristãs. 3. Educação para as virtudes Formação de jovens virtuosos, livres e
-                responsáveis, que sejam caridosos, honrem a Deus, seus pais e famílias, que vençam o mundo e alcancem a
-                santidade. 4. Acompanhamento espiritual dos jovens Acompanhamento espiritual e vocacional permanente e
-                personificado dos jovens. combate à cultura da tristeza, carências e vazio existencial. 5. Esporte,
-                arte, trabalho e missão Esportes e artes como meios de formação e evangelização dos jovens. oferecimento
-                de oficinas para aprendizado de profissões e desenvolvimento do amor pelo trabalho. realização de
-                diversas atividades missionárias para vivência da caridade cristã.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="map-section" id="contato">
-      <div class="map-wrapper">
-        <iframe src="https://www.google.com/maps?q=Col%C3%A9gio%20Eucar%C3%ADstico%20de%20Cuiab%C3%A1&output=embed"
-          width="100%" height="100%" style="border: 0;" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-      </div>
+      <blockquote>“A santidade não é um luxo para poucos, mas é a vocação para todos.”<cite>São João Paulo II</cite></blockquote>
     </section>
   </main>
 
-  <footer class="footer-section">
-    <div class="footer-container">
-      <div class="footer-content">
-        <div class="footer-logo">
-          <img src="assets/logo_colegio.svg" alt="Colégio Eucarístico de Cuiabá">
+  <footer class="site-footer" id="contato">
+    <div class="footer-main">
+      <a class="footer-brand" href="#inicio" aria-label="Colégio Eucarístico de Cuiabá — início">
+        <img src="./assets/logo_colegio.svg" alt="">
+        <span>Colégio Eucarístico<br>de Cuiabá<small>Conhecer, amar e servir</small></span>
+      </a>
+
+      <nav class="footer-links" aria-label="Links rápidos">
+        <h2>Links rápidos</h2>
+        <div>
+          <a href="#excelencia">Excelência</a>
+          <a href="#formacao">Formação</a>
+          <a href="#juventude">Juventude</a>
         </div>
-
-        <div class="footer-info">
-          <a href="https://api.whatsapp.com/send/?phone=5565999364922&text&type=phone_number&app_absent=0"
-            target="_blank" class="footer-phone">
-            <i class="fa-brands fa-whatsapp"></i>
-            +55 65 99936-4922
-          </a>
-
-          <a href="https://api.whatsapp.com/send/?phone=5565999364922&text&type=phone_number&app_absent=0"
-            target="_blank" class="footer-button">
-            Faça sua matrícula
-          </a>
-
-          <a href="https://api.whatsapp.com/send/?phone=5565999364922&text&type=phone_number&app_absent=0"
-            target="_blank" class="footer-link">
-            Seja um benfeitor
-          </a>
+        <div>
+          <a href="#bases">Bases</a>
+          <a href="#matricula">Dúvidas</a>
+          <a href="#contato">Contato</a>
         </div>
+      </nav>
+
+      <address class="footer-contact">
+        <h2>Contato</h2>
+        <a href="https://maps.google.com/?q=Col%C3%A9gio+Eucar%C3%ADstico+de+Cuiab%C3%A1" target="_blank"
+          rel="noopener noreferrer"><i class="fa-solid fa-location-dot" aria-hidden="true"></i><span>Cuiabá-MT</span></a>
+        <a href="tel:+556536435252"><i class="fa-solid fa-phone" aria-hidden="true"></i><span>(65) 3643-5252</span></a>
+        <a href="mailto:contato@colegioeucaristico.com.br"><i class="fa-solid fa-envelope"
+            aria-hidden="true"></i><span>contato@colegioeucaristico.com.br</span></a>
+      </address>
+
+      <div class="footer-social">
+        <h2>Siga-nos</h2>
+        <div class="footer-social-links">
+          <a href="https://www.instagram.com/colegioeucaristicocuiaba/" target="_blank" rel="noopener noreferrer"
+            aria-label="Instagram do Colégio Eucarístico de Cuiabá"><i class="fa-brands fa-instagram"
+              aria-hidden="true"></i></a>
+          <a href="https://www.youtube.com/results?search_query=Col%C3%A9gio+Eucar%C3%ADstico+Cuiab%C3%A1"
+            target="_blank" rel="noopener noreferrer" aria-label="Pesquisar o Colégio Eucarístico de Cuiabá no YouTube">
+            <i class="fa-brands fa-youtube" aria-hidden="true"></i></a>
+          <a href="https://www.facebook.com/search/top?q=Col%C3%A9gio%20Eucar%C3%ADstico%20Cuiab%C3%A1"
+            target="_blank" rel="noopener noreferrer" aria-label="Pesquisar o Colégio Eucarístico de Cuiabá no Facebook">
+            <i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+        </div>
+        <a class="footer-whatsapp" href="https://wa.me/5565999364922" target="_blank" rel="noopener noreferrer">
+          <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Matrículas
+        </a>
       </div>
 
-      <h2 class="footer-bg-text">
-        COLÉGIO EUCARÍSTICO DE CUIABÁ
-      </h2>
+      <div class="footer-signature">
+        <svg class="footer-church" viewBox="0 0 220 120" fill="none" aria-hidden="true">
+          <g stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M8 105h204M16 102V75l22-12v39m-16-30 16 8m-11-11v33m16-2V58l25-15v59M50 54l22 12m-16-16v52m22 0V43l31-21 29 21v59m-48 0V56h37v46m-25-37h9v12h-9zm0 20h9v15h-9zm18-20h9v12h-9zm0 20h9v15h-9z" />
+            <path d="M93 22h25M102 22V12h7v10m-3-10V5m-4 4h8m-39 33v-9h3v9m-6-9 5-7 5 7m-5-7V20m-3 3h6m63 79V63l23-14 22 14v39m-34-25h10v12h-10zm18 0h10v12h-10zm-18 17h10v12h-10zm18 0h10v12h-10z" />
+            <path d="M146 49V35h7v14m-4-14V28m-4 4h8m25 32V48l11-8 12 8v54m-17-35h9v11h-9zm0 18h9v12h-9zm19-38v-9h3v9m-6-9 5-7 5 7m-5-7V23m-3 3h6m-57 50h-8m-52 0h-9m-28 1h-8" />
+            <path d="M4 109h212m-190-5-5 5m15-5 5 5m18-5-5 5m14-5 5 5m115-5 5 5m12-5 5 5m13-5 5 5m13-5 5 5" />
+          </g>
+        </svg>
+        <div class="footer-signature-copy">
+          <p>Tudo para maior glória de Deus</p>
+          <span class="footer-signature-line" aria-hidden="true"></span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-divider"><span aria-hidden="true">✦</span></div>
+    <div class="footer-bottom">
+      <span>© 2027 Colégio Eucarístico de Cuiabá</span>
+      <a href="#inicio">Voltar ao início <i class="fa-solid fa-arrow-up" aria-hidden="true"></i></a>
     </div>
   </footer>
 
-  <script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js"></script>
   <script src="./js/scripts.js"></script>
 </body>
 
